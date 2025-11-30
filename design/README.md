@@ -5,7 +5,7 @@ The database design for Task Management System
 
 ## Database Choise
 
-- **Database Type**: SQL
+- **Database Type**: SQL (Postgre)
     - The task data will be structured
     - SQL is fast which will help system performance
 
@@ -73,7 +73,6 @@ Entity-Relation Diagram:
     - assigned_to: uuid [ref: > users.id]
     - assigned_by: uuid [ref: > users.id]
     - assigned_at: timestamp [not null]
-    - delegated: bool [default: false]
     
     **Details**
 
